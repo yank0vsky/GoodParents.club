@@ -15,7 +15,7 @@ jobs:
           ref: club
       - run: docker login ghcr.io -u yank0vsky -p ${{ secrets.TOKEN }}
       - run: docker pull ghcr.io/yank0vsky/goodparents.club:latest|| true
-      - run: docker build -t ghcr.io/yank0vsky/goodparents.club:latest -t ghcr.io/yank0vsky/goodparents.club:$GITHUB_SHA .
+      - run: docker build -t ghcr.io/yank0vsky/goodparents.club:latest -t ghcr.io/yank0vsky/goodparents.club:$GITHUB_SHA --cache-from=ghcr.io/yank0vsky/goodparents.club:latest  .
       - run: docker image push ghcr.io/yank0vsky/goodparents.club:$GITHUB_SHA
       - run: docker image push ghcr.io/yank0vsky/goodparents.club:latest
 
