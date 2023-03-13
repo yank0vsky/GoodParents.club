@@ -1,4 +1,8 @@
+import logging
+from datetime import datetime, timedelta
+
 from django.conf import settings
+from django.db import IntegrityError
 from django.db.models import Q
 from django.shortcuts import redirect, render
 from django.urls import reverse
@@ -6,9 +10,11 @@ from django_q.tasks import async_task
 
 from authn.helpers import set_session_cookie
 from authn.models.session import Session, Code
-from notifications.email.users import send_auth_email
+from notifications.email.users import send_auth_email, send_payed_email
 from notifications.telegram.users import notify_user_auth
 from users.models.user import User
+
+log = logging.getLogger()
 
 
 def email_login(request):
