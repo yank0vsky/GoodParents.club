@@ -92,11 +92,11 @@ def email_login(request):
             async_task(send_auth_email, user, code)
             async_task(notify_user_auth, user, code)
 
-            return render(request, "auth/email.html", {
-                "email": user.email,
-                "goto": goto,
-                "restore": user.deleted_at is not None,
-            })
+        return render(request, "auth/email.html", {
+            "email": user.email,
+            "goto": goto,
+            "restore": user.deleted_at is not None,
+        })
 
 
 def email_login_code(request):
