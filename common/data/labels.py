@@ -1,44 +1,51 @@
 LABELS = {
+    "pregnant": {
+        "title": "В ожидании",
+        "description": "От зачатия до рождения",
+        "emoji": "🤰🏻",
+        "color": "#9dd1f5",
+        "notify": False,
+    },
     "children0": {
         "title": "Новорожденные 0-2м",
         "description": "Новорожденные 0-2м",
-        "emoji": "💎️",
+        "emoji": "🐣",
         "color": "#3498DB",
         "notify": False,
     },
     "children1": {
         "title": "Младенцы 2-12м",
         "description": "Младенцы 2-12м",
-        "emoji": "💎️",
-        "color": "#3498DB",
+        "emoji": "👶🏻",
+        "color": "#81fcfa",
         "notify": False,
     },
     "children3": {
         "title": "Малыши 1-3г",
         "description": "Малыши 1-3г",
-        "emoji": "💎️",
-        "color": "#3498DB",
+        "emoji": "🧸",
+        "color": "#ca6fed",
         "notify": False,
     },
     "children4": {
         "title": "Дети 4-9 лет",
         "description": "Дети 4-9 лет",
-        "emoji": "💎️",
-        "color": "#3498DB",
+        "emoji": "🧒",
+        "color": "#eb6fed",
         "notify": False,
     },
     "children10": {
         "title": "Переходный возраст 10-12 лет",
         "description": "Переходный возраст 10-12 лет",
-        "emoji": "💎️",
-        "color": "#3498DB",
+        "emoji": "🎒",
+        "color": "#aa6fed",
         "notify": False,
     },
     "children13": {
         "title": "Подростки 13-18",
         "description": "Подростки 13-18",
-        "emoji": "💎️",
-        "color": "#3498DB",
+        "emoji": "🥷",
+        "color": "#daed6f",
         "notify": False,
     },
     "meta": {
@@ -131,11 +138,11 @@ LABELS = {
         "color": "#F7DC6F",
         "notify": False
     },
-    "inteview": {
-        "title": "Интервью",
-        "description": "Клубное интервью",
+    "podcast": {
+        "title": "Подкаст",
+        "description": "Клубный подкаст",
         "emoji": "🎙",
         "color": "#f75990",
-        "notify": False
+        "notify": True
     },
 }
