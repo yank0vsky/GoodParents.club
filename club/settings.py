@@ -182,8 +182,8 @@ DEFAULT_FROM_EMAIL = os.getenv("DEFAULT_FROM_EMAIL", "GoodParents.Club <club@goo
 # App
 
 APP_HOST = os.environ.get("APP_HOST") or "http://127.0.0.1:8000"
-APP_NAME = "Клуб родителей"
-APP_DESCRIPTION = "Всё интересное происходит за закрытыми дверями"
+APP_NAME = "GoodParents Club"
+APP_DESCRIPTION = "Всё самое интересное происходит за закрытыми дверями"
 LAUNCH_DATE = datetime(2020, 4, 13)
 
 AUTH_CODE_LENGTH = 6
