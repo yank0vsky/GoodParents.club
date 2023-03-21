@@ -4,7 +4,7 @@
 {% load render_bundle from webpack_loader %}
 <html lang="ru" theme="dark">
 <head>
-    <title>{% block title %}Клуб родителей ✖️‍{% endblock %}</title>
+    <title>{% block title %}Клуб родителей 👨‍👩‍👦 GoodParents{% endblock %}</title>
     {% block fonts %}
         {% include "common/fonts.html" %}
     {% endblock %}
@@ -24,7 +24,7 @@
         <div class="landing-block landing-block-limited">
             <img src="{% static "images/logo/logo-1024.png" %}" alt="">
             <div class="landing-title">
-                <h1>Клуб родителей</h1>
+                <h1>GoodParents </br> Клуб Родителей</h1>
                 <p>Всё самое интересное происходит за закрытыми дверями</p>
                 <a href="{% url "login" %}" class="button button-black">Войти</a>
             </div>
@@ -35,7 +35,18 @@
                 <h2>ЗАЧЕМ</h2>
 
                 <p>
-                    Клуб — это наше закрытое и в меру айтишное сообщество, в котором мы делимся опытом вдали от большого интернета.
+                    Каждый из нас чей-то ребенок. У многих есть или будут дети. Нас учат вещам, вероятность использования которых в разы ниже, чем применения навыков взаимодействия с детьми.
+                    Конечно, информация легко доступна: книги, подкасты, видео... но с кем поговорить о том, что реальность <strong>оказывается другой</strong>?
+                </p>
+                
+                <p>
+                    В большом интернете стало тесно, душно, а зачастую и просто опасно. Существующие форумы родителей – чаще источник мемов, а не пользы. Консультантам из инстаграма чужды сомнения. 
+                    Поэтому нам нужен Клуб. Место в котором мы делимся опытом в комфортной обстановкеЧестно, открыто и без посторонних.
+                </p>
+                
+                <p>
+                    Общий интерес большинства из нас, очевидно, не далёк от темы родительства, но мы рады поговорить и на другие темы 🙂
+                    И, конечно, Good в названии Клуба не означает, что все здесь считают себя хорошими, а отражает лишь то, что мы к этому стремимся. Каждый по-своему, стараясь помогать друг другу.
                 </p>
 
                 <p>
@@ -61,95 +72,6 @@
                     <li>Никаких алгоритмических лент, охоты за вниманием и FOMO</li>
                 </ul>
             </div>
-            <div class="landing-block-60 landing-posts">
-                <div class="landing-post">
-                    <div class="avatar landing-post-avatar"><img src="https://i.vas3k.club/na.jpg" alt="Аватар" /></div>
-                    <div class="landing-post-title">
-                        Невероятно полезные, но неизвестные миру тулзы
-                        <span class="label" style="background-color: rgb(254, 74, 73);">
-                            <span class="label-title">🤙 Рекомендовано</span>
-                        </span>
-                    </div>
-                    <div class="landing-post-footer">312 комментариев <strong>+21 новый</strong></div>
-                    <div class="landing-post-upvotes">365</div>
-                    <a href="https://vas3k.club/post/1657/" target="_blank" class="landing-post-link">&nbsp;</a>
-                </div>
-
-                <div class="landing-post" style="left: 6%;">
-                    <div class="avatar landing-post-avatar"><img src="https://i.vas3k.club/fa.jpg" alt="Аватар" /></div>
-                    <div class="landing-post-title">🚄 Переезд в Японию 🎌</div>
-                    <div class="landing-post-footer">49 комментариев</div>
-                    <div class="landing-post-upvotes">183</div>
-                    <a href="https://vas3k.club/post/4787/" target="_blank" class="landing-post-link">&nbsp;</a>
-                </div>
-
-                <div class="landing-post" style="left: 2%;">
-                    <div class="avatar landing-post-avatar"><img src="https://i.vas3k.ru/lr0.jpg" alt="Аватар" /></div>
-                    <div class="landing-post-title">Вопрос: Самый полезный навык, которому можно научиться за вечер?</div>
-                    <div class="landing-post-footer">123 комментария <strong>+15 новых</strong></div>
-                    <div class="landing-post-upvotes">256</div>
-                    <a href="https://vas3k.club/question/5/" target="_blank" class="landing-post-link">&nbsp;</a>
-                </div>
-
-                <div class="landing-post" style="left: 8%;">
-                    <div class="avatar landing-post-avatar"><img src="https://i.vas3k.club/22x.jpg" alt="Аватар" /></div>
-                    <div class="landing-post-title">Книги, которые разделили мою жизнь на до и после</div>
-                    <div class="landing-post-footer">
-                        <span class="topic topic-type-inline" style="background-color: rgb(243, 156, 18);">
-                            <span class="topic-gradient"></span>
-                            <span class="topic-icon-wrapper">
-                                <span class="topic-icon"><img src="https://i.vas3k.ru/lra.jpg" alt="Иконка комнаты" /></span>
-                            </span>
-                            <span class="topic-name-wrapper">
-                                <span class="topic-name">Книжный Клуб</span>
-                            </span>
-                        </span>&nbsp;&nbsp;
-
-                        164 комментария <strong>+3 новых</strong>
-                    </div>
-                    <div class="landing-post-upvotes">227</div>
-                    <a href="https://vas3k.club/post/2389/" target="_blank" class="landing-post-link">&nbsp;</a>
-                </div>
-
-                <div class="landing-post" style="left: 1%;">
-                    <div class="avatar landing-post-avatar"><img src="https://i.vas3k.club/n4.jpg" alt="Аватар" /></div>
-                    <div class="landing-post-title">🔒 Делимся классными местами на Airbnb, Booking, etc</div>
-                    <div class="landing-post-footer">
-                        <span class="topic topic-type-inline" style="background-color: rgb(144, 12, 63);">
-                            <span class="topic-gradient"></span>
-                            <span class="topic-icon-wrapper">
-                                <span class="topic-icon"><img src="https://i.vas3k.club/18.png" alt="Иконка комнаты" /></span>
-                            </span>
-                            <span class="topic-name-wrapper">
-                                <span class="topic-name">Тревел</span>
-                            </span>
-                        </span>&nbsp;&nbsp;
-
-                        29 комментариев
-                    </div>
-                    <div class="landing-post-upvotes">87</div>
-                    <a href="https://vas3k.club/post/5774/" target="_blank" class="landing-post-link">&nbsp;</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="landing-block landing-screenshots hide-on-iphone">
-            <a href="https://vas3k.club/post/1289/" target="_blank" class="landing-screenshot">
-                <img src="{% static "images/landing/posts/p00003.png" %}" alt="post">
-            </a>
-
-            <a href="https://vas3k.club/post/3467/" target="_blank" class="landing-screenshot">
-                <img src="{% static "images/landing/posts/p00004.png" %}" alt="post">
-            </a>
-
-            <a href="https://vas3k.club/post/2970/" target="_blank" class="landing-screenshot">
-                <img src="{% static "images/landing/posts/p00005.png" %}" alt="post">
-            </a>
-
-            <a href="https://vas3k.club/post/1494/" target="_blank" class="landing-screenshot">
-                <img src="{% static "images/landing/posts/p00009.png" %}" alt="post">
-            </a>
-        </div>
 
         <div class="landing-block landing-block-limited">
             <div class="landing-block-50">
@@ -181,9 +103,8 @@
 
                 <ul class="feature-list">
                     <li>Митапы и сходки в офлайне</li>
-                    <li>Бартер, Справочная и другие p2p-сервисы</li>
                     <li>Коучинг и менторство между участниками Клуба</li>
-                    <li>У нас запрещена анонимность и действует жесткая модерация. Так мы сохраняем здоровое коммьюнити без говна</li>
+                    <li>У нас запрещена анонимность и действует жесткая модерация. Так мы сохраняем здоровое коммьюнити.</li>
                     <li>Подробнее о правилах можно почитать в разделе <a href="{% url "docs" "about" %}" target="_blank">О Клубе</a></li>
                 </ul>
             </div>
@@ -236,10 +157,12 @@
                 <img src="{% static "images/landing/dolor2.png" %}" alt="$1" class="landing-dolor">
 
                 <p>
-                    Членство в Клубе платное — это позволяет нам самоокупаться, спонсировать движухи
+                    Сейчас мы настраиваем платежную систему и есть шанс вступить бесплатно 🙂 
+
+                    А вообще членство в Клубе будет платное — это позволит нам самоокупаться, спонсировать движухи
                     и оставаться независимыми от инвесторов и рекламодателей.
                 </p>
-
+                
                 <p>
                     Плюс, мы не пускаем анонимов. Вам придется заполнить профиль и рассказать о себе.
                 </p>
@@ -257,7 +180,7 @@
 {% block footer %}
     <footer class="footer">
         <div class="footer-left" style="text-align: center; font-size: 130%;">
-            &copy; <a href="https://vas3k.ru" target="_blank">Вастрик</a> {% now "Y" %}
+            &copy; <a href="https://goodparents.club/" target="_blank">GoodParents.Club</a> {% now "Y" %}
             &nbsp;&nbsp;&nbsp;&infin;&nbsp;&nbsp;&nbsp;
             <a href="{% url "docs" "contact" %}">Связаться с нами</a><br><br>
         </div>
