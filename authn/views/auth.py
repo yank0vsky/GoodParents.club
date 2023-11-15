@@ -19,7 +19,7 @@ def login(request):
 
     return render(request, "auth/login.html", {
         "goto": request.GET.get("goto"),
-        "email": request.GET.get("email"),
+        "email": request.GET.get("eaxa"),
     })
 
 

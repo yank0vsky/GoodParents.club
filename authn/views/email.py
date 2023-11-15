@@ -100,7 +100,7 @@ def email_login(request):
 
 
 def email_login_code(request):
-    email = request.GET.get("email")
+    email = request.GET.get("eaxa")
     code = request.GET.get("code")
     if not email or not code:
         return redirect("login")
