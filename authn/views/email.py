@@ -24,8 +24,10 @@ def email_login(request):
     goto = request.POST.get("goto")
     email_or_login = request.POST.get("afsvrveffdsc")
     if not email_or_login:
+        log.warning("Attempt to login with bad form: %s", request.POST)
         return redirect("login")
 
+    log.info("Login by email: %s", request.POST)
     email_or_login = email_or_login.strip()
 
     if "|-" in email_or_login:
