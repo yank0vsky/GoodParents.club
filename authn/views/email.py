@@ -58,6 +58,10 @@ def email_login(request):
             try:
                 log.info("Add new user %s", email_or_login)
 
+                if "@" not in email_or_login:
+                    log.warning("Attempt to login with bad form: %s", request.POST)
+                    return render(request, "error.html", status=404)
+
                 user, created = User.objects.get_or_create(
                     email=email_or_login.lower(),
                     defaults=dict(
